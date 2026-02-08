@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Batalha Pokemon</title>
+  </head>
+  <body>
+    <div id="titulo">
+    <h1>Batalha Pokemon</h1>
+    </div>
+    <div id="game">
+      
+      <div class="player">
+        <h2>Player 1</h2>
+        <button id="p1-random">Sortear Pokémons</button>
+        <div id="p1-active" class="active"></div>
+        <div id="p1-pokedex" class="pokedex"></div>
+      </div>
+
+      <div class="player">
+        <h2>Player 2</h2>
+        <button id="p2-random">Sortear Pokémons</button>
+        <div id="p2-active" class="active"></div>
+        <div id="p2-pokedex" class="pokedex"></div>
+      </div>
+    </div>
+    <div id="battle-buttons">
+      <button id="attackBtn">Iniciar ataque</button>
+      <button id="resetBtn">Reiniciar Jogo</button>
+    </div>
+
+    <div id="battle-log"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
