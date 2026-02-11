@@ -1,11 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calculadora</title>
-</head>
-<body>
-   <h1>Aqui vai entrar a calculadora</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header-container">
+        <h1>Calculadora</h1>
+      </header>
+
+      <main class="main-container">
+        <section id="display-container">
+          <input type="text" id="display" disabled />
+        </section>
+        <section id="buttons-container">
+          <div> 
+            <button class="btn btn-function" data-value="clear">C</button>
+            <button class="btn btn-function" data-value="clear">C</button>
+            <button class="btn btn-function" data-value="percentage">%</button>
+            <button class="btn btn-function" data-value="backspace">⌫</button>
+          </div>
+          <div>
+            <button class="btn" data-value="7">7</button>
+            <button class="btn" data-value="8">8</button>
+            <button class="btn" data-value="9">9</button>
+            <button class="btn btn-function" data-value="divide">÷</button>
+          </div>
+          <div>
+            <button class="btn" data-value="4">4</button>
+            <button class="btn" data-value="5">5</button>
+            <button class="btn" data-value="6">6</button>
+            <button class="btn btn-function" data-value="multiply">X</button>
+          </div>
+          <div>
+            <button class="btn" data-value="1">1</button>
+            <button class="btn" data-value="2">2</button>
+            <button class="btn" data-value="3">3</button>
+            <button class="btn btn-function" data-value="subtract">-</button>
+          </div>
+          <div>
+            <button class="btn" data-value="0">0</button>
+            <button class="btn" data-value=",">,</button>
+            <button class="btn btn-equal" data-value="equals">=</button>
+            <button class="btn btn-function" data-value="add">+</button>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer-container">
+        <p>&copy; 2026 Central de Testes. Todos os direitos reservados.</p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
